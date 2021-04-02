@@ -2,7 +2,6 @@ import React, { useLayoutEffect } from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { auth } from "../firebase";
 import {
-  AntDesign,
   Entypo,
   MaterialCommunityIcons,
   MaterialIcons,
@@ -97,23 +96,23 @@ const HomeScreen = ({ navigation }) => {
         </View>
         <View style={styles.cover}>
           <TouchableOpacity
-            onPress={() => navigation.navigate("page3")}
+            onPress={() => navigation.navigate("Market Yard")}
             activeOpacity={0.5}
           >
             <Text h3 style={styles.title}>
-              page3
+              Market Yard
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{ justifyContent: "center", marginRight: 50 }}
             activeOpacity={0.5}
-            onPress={() => navigation.navigate("page3")}
+            onPress={() => navigation.navigate("Market Yard")}
           >
-            <AntDesign
-              name="bars"
+            <Entypo
+              name="location"
               size={24}
               color="black"
-              style={{ justifyContent: "center", marginLeft: 175 }}
+              style={{ justifyContent: "center", marginLeft: 107 }}
             />
           </TouchableOpacity>
         </View>

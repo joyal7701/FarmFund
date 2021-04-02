@@ -10,7 +10,7 @@ const LoginScreen = ({ navigation }) => {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
-        navigation.replace("Agro Shops");
+        navigation.replace("HomeScreen");
       }
     });
     return unsubscribe;

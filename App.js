@@ -12,6 +12,12 @@ import HomeScreen from "./screens/HomeScreen";
 import page1 from "./screens/page1";
 import page2 from "./screens/page2";
 import page3 from "./screens/page3";
+import Apply from "./screens/Apply";
+import Wheat from "./screens/Wheat";
+import Corn from "./screens/Corn";
+import Rice from "./screens/Rice";
+import Bajra from "./screens/Bajra";
+import Cotton from "./screens/Cotton";
 
 const Stack = createStackNavigator();
 
@@ -35,7 +41,13 @@ export default function App() {
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="All Subsidies" component={page1} />
         <Stack.Screen name="Agro Shops" component={page2} />
-        <Stack.Screen name="page3" component={page3} />
+        <Stack.Screen name="Market Yard" component={page3} />
+        <Stack.Screen name="Subsidy Registered" component={Apply} />
+        <Stack.Screen name="Wheat" component={Wheat} />
+        <Stack.Screen name="Corn" component={Corn} />
+        <Stack.Screen name="Bajra" component={Bajra} />
+        <Stack.Screen name="Cotton" component={Cotton} />
+        <Stack.Screen name="Rice" component={Rice} />
       </Stack.Navigator>
     </NavigationContainer>
   );

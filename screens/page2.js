@@ -8,58 +8,73 @@ const page2 = () => {
       <View style={styles.container}>
         <View style={styles.header}></View>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3>
             <Text>ShopKeeper : Mohandas Desai</Text>
           </Text>
-          <Text h3 style={styles.shponame}>
+          <Text h3>
             <Text>Shop Name : Cultured Crops</Text>
           </Text>
-          <Text h3 style={styles.mobilenumber}>
+          <Text h3>
             <Text>Contact : 9909937921</Text>
           </Text>
+          <Text h3>
+            <Text>Location : Vasana, Ahmedabad</Text>
+          </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3>
             <Text>ShopKeeper : Keshavlal Pandya</Text>
           </Text>
-          <Text h3 style={styles.shponame}>
+          <Text h3>
             <Text>Shop Name : Whitecreek Farms</Text>
           </Text>
-          <Text h3 style={styles.mobilenumber}>
+          <Text h3>
             <Text>Contact : 982839571</Text>
           </Text>
+          <Text h3>
+            <Text>Location : Sector 13, Gandhinagr</Text>
+          </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3>
             <Text>ShopKeeper : Ramakant Patel</Text>
           </Text>
-          <Text h3 style={styles.shponame}>
+          <Text h3>
             <Text>Shop Name : Succulent Seeds</Text>
           </Text>
-          <Text h3 style={styles.mobilenumber}>
+          <Text h3>
             <Text>Contact : 9123759011</Text>
           </Text>
+          <Text h3>
+            <Text>Location : Kadi, Mehsana</Text>
+          </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3>
             <Text>ShopKeeper : Suryabhai Shukla</Text>
           </Text>
-          <Text h3 style={styles.shponame}>
+          <Text h3>
             <Text>Shop Name : Healthy Harvest</Text>
           </Text>
-          <Text h3 style={styles.mobilenumber}>
+          <Text h3>
             <Text>Contact : 9489654789</Text>
+          </Text>
+          <Text h3>
+            <Text>Location : Morbi, Rajkot</Text>
           </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3 style={styles.shopkeepername}>
-            <Text> ShopKeeper : Bharatbhai Patel</Text>
+          <Text h3>
+            <Text>ShopKeeper : Bharatbhai Patel</Text>
           </Text>
-          <Text h3 style={styles.shopname}>
+          <Text h3>
             <Text>Shop Name : Richer Lands</Text>
           </Text>
-          <Text h3 style={styles.mobilenumber}>
+          <Text h3>
             <Text>Contact : 945863014</Text>
+          </Text>
+          <Text h3>
+            <Text>Location : Songadh, Surat</Text>
           </Text>
         </View>
       </View>
@@ -97,10 +112,10 @@ const styles = StyleSheet.create({
     border: "2px solid black",
     margin: "15px",
     padding: "10px",
-    color: " black",
-    backgroundColor: "lightgray",
+    color: "black",
+    backgroundColor: "#dcd0ff",
     width: "350px",
-    boxShadow: " 0 0 5px black, 0 0 20px black, 0 0 30px black",
+    boxShadow: " 0 0 5px orange, 0 0 0px green, 0 0 0px green",
   },
   h3: {
     padding: "3px",

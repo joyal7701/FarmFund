@@ -8,6 +8,8 @@ const RegisterScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [imageUrl, setImageUrl] = useState("");
+  const [city, setCity] = useState("");
+  const [number, setNumber] = useState("");
 
   const register = () => {
     auth
@@ -49,6 +51,18 @@ const RegisterScreen = () => {
           secureTextEntry
           value={password}
           onChangeText={(text) => setPassword(text)}
+        />
+        <Input
+          placeholder="Mobile no."
+          type="number"
+          value={number}
+          onChangeText={(text) => setNumber(text)}
+        />
+        <Input
+          placeholder="City"
+          type="text"
+          value={city}
+          onChangeText={(text) => setCity(text)}
         />
         <Input
           placeholder="profile picture URL (optional)"

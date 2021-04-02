@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
-const page1 = () => {
+const page1 = ({ navigation }) => {
   return (
     <View>
       <View style={styles.back}></View>
@@ -17,7 +17,11 @@ const page1 = () => {
             water use efficiency at farm level. It is also called as 'TAPAK
             SINCHAI' .
           </Text>
-          <TouchableOpacity activeOpacity={0.5} style={styles.apply}>
+          <TouchableOpacity
+            activeOpacity={0.5}
+            style={styles.apply}
+            onPress={() => navigation.navigate("Subsidy Registered")}
+          >
             Apply
           </TouchableOpacity>
         </View>
@@ -32,7 +36,11 @@ const page1 = () => {
             post-harvest losses due to cyclonic rains and losses due to
             unseasonal rainfall in India.
           </Text>
-          <TouchableOpacity activeOpacity={0.5} style={styles.apply}>
+          <TouchableOpacity
+            activeOpacity={0.5}
+            style={styles.apply}
+            onPress={() => navigation.navigate("Subsidy Registered")}
+          >
             Apply
           </TouchableOpacity>
         </View>
@@ -46,7 +54,11 @@ const page1 = () => {
             of R-ABI Incubatees Funding up to Rs.25 lakhs (85% is a grant and
             15% is the contribution from the incubatee)
           </Text>
-          <TouchableOpacity activeOpacity={0.5} style={styles.apply}>
+          <TouchableOpacity
+            activeOpacity={0.5}
+            style={styles.apply}
+            onPress={() => navigation.navigate("Subsidy Registered")}
+          >
             Apply
           </TouchableOpacity>
         </View>
@@ -62,7 +74,11 @@ const page1 = () => {
             tonnes, Wheat- 3 million tonnes, Pulses- 3 million tonnes and Coarse
             Cereals- 2 million tonnes.
           </Text>
-          <TouchableOpacity activeOpacity={0.5} style={styles.apply}>
+          <TouchableOpacity
+            activeOpacity={0.5}
+            style={styles.apply}
+            onPress={() => navigation.navigate("Subsidy Registered")}
+          >
             Apply
           </TouchableOpacity>
         </View>
