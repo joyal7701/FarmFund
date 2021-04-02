@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .maincovers {
+        display: none;
+      }
+      .header {
+        font-size: 50px;
+        margin: 10px;
+        padding: 10px;
+        letter-spacing: 4px;
+      }
+      .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      select {
+        font-size: 20px;
+        margin: 10px;
+        padding: 5px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        width: 180px;
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+      }
+      .cover {
+        position: relative;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: black;
+        box-shadow: 0 0 10px black, 0 0 40px black;
+        letter-spacing: 2px;
+        background-color: rgba(255, 255, 255, 0.404);
+      }
+      .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url(./warren-wong-J33qmCVr02A-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.6;
+      }
+      hr {
+        color: black;
+        width: 100%;
+        margin-bottom: 30px;
+        border-bottom: 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back"></div>
+    <div class="container">
+      <div class="header">MarketYard</div>
+      <div class="selects">
+        <select name="crops" id="crops" onchange="display()">
+          <option value="" disabled selected hidden>--Select Crop--</option>
+          <option value="wheat">Wheat</option>
+          <option value="rice">Rice</option>
+          <option value="cotton">Cotton</option>
+          <option value="tobacco">Tobacco</option>
+          <option value="bajra">Bajra</option>
+        </select>
+      </div>
+      <hr />
+      <div class="yardcovers">
+        <div class="maincovers" id="wheatcover">
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Wheat</h3>
+            <h3 class="city">City : Ahmedabad</h3>
+            <h3 class="range">Range : 265-275</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Wheat</h3>
+            <h3 class="city">City : Ghandhinagar</h3>
+            <h3 class="range">Range : 285-295</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Wheat</h3>
+            <h3 class="city">City : Rajkot</h3>
+            <h3 class="range">Range : 250-265</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Wheat</h3>
+            <h3 class="city">City : Surat</h3>
+            <h3 class="range">Range : 255-275</h3>
+          </div>
+        </div>
+        <div class="maincovers" id="ricecover">
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Rice</h3>
+            <h3 class="city">City : Ahmedabad</h3>
+            <h3 class="range">Range : 365-375</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Rice</h3>
+            <h3 class="city">City : Ghandhinagar</h3>
+            <h3 class="range">Range : 385-395</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Rice</h3>
+            <h3 class="city">City : Rajkot</h3>
+            <h3 class="range">Range : 295-315</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Rice</h3>
+            <h3 class="city">City : Surat</h3>
+            <h3 class="range">Range : 300-345</h3>
+          </div>
+        </div>
+        <div class="maincovers" id="bajracover">
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Bajra</h3>
+            <h3 class="city">City : Ahmedabad</h3>
+            <h3 class="range">Range : 365-375</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Bajra</h3>
+            <h3 class="city">City : Ghandhinagar</h3>
+            <h3 class="range">Range : 385-395</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Bajra</h3>
+            <h3 class="city">City : Rajkot</h3>
+            <h3 class="range">Range : 295-315</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Bajra</h3>
+            <h3 class="city">City : Surat</h3>
+            <h3 class="range">Range : 300-345</h3>
+          </div>
+        </div>
+        <div class="maincovers" id="cottoncover">
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Cotton</h3>
+            <h3 class="city">City : Ahmedabad</h3>
+            <h3 class="range">Range : 365-375</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Cotton</h3>
+            <h3 class="city">City : Ghandhinagar</h3>
+            <h3 class="range">Range : 385-395</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Cotton</h3>
+            <h3 class="city">City : Rajkot</h3>
+            <h3 class="range">Range : 295-315</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Cotton</h3>
+            <h3 class="city">City : Surat</h3>
+            <h3 class="range">Range : 300-345</h3>
+          </div>
+        </div>
+        <div class="maincovers" id="tobaccocover">
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Tobacco</h3>
+            <h3 class="city">City : Ahmedabad</h3>
+            <h3 class="range">Range : 365-375</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Tobacco</h3>
+            <h3 class="city">City : Ghandhinagar</h3>
+            <h3 class="range">Range : 385-395</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Tobacco</h3>
+            <h3 class="city">City : Rajkot</h3>
+            <h3 class="range">Range : 295-315</h3>
+          </div>
+          <div class="cover">
+            <h3 class="cropname">Crop-Name : Tobacco</h3>
+            <h3 class="city">City : Surat</h3>
+            <h3 class="range">Range : 300-345</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function display() {
+      let name = document.getElementById("crops");
+      console.log(document.getElementById("crops").value);
+      if (name.value == "wheat") {
+        document.getElementById("wheatcover").style.display = "block";
+        document.getElementById("bajracover").style.display = "none";
+        document.getElementById("tobaccocover").style.display = "none";
+        document.getElementById("cottoncover").style.display = "none";
+        document.getElementById("ricecover").style.display = "none";
+      }
+      if (name.value == "rice") {
+        document.getElementById("ricecover").style.display = "block";
+        document.getElementById("wheatcover").style.display = "none";
+        document.getElementById("tobaccocover").style.display = "none";
+        document.getElementById("cottoncover").style.display = "none";
+        document.getElementById("bajaracover").style.display = "none";
+      }
+      if (name.value == "cotton") {
+        document.getElementById("cottoncover").style.display = "block";
+        document.getElementById("wheatcover").style.display = "none";
+        document.getElementById("tobaccocover").style.display = "none";
+        document.getElementById("bajracover").style.display = "none";
+        document.getElementById("ricecover").style.display = "none";
+      }
+      if (name.value == "tobacco") {
+        document.getElementById("tobaccocover").style.display = "block";
+        document.getElementById("wheatcover").style.display = "none";
+        document.getElementById("bajracover").style.display = "none";
+        document.getElementById("cottoncover").style.display = "none";
+        document.getElementById("ricecover").style.display = "none";
+      }
+      if (name.value == "bajra") {
+        document.getElementById("bajracover").style.display = "block";
+        document.getElementById("wheatcover").style.display = "none";
+        document.getElementById("tobaccocover").style.display = "none";
+        document.getElementById("cottoncover").style.display = "none";
+        document.getElementById("ricecover").style.display = "none";
+      }
+    }
+  </script>
+</html>
