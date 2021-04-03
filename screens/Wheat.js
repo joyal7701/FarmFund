@@ -90,20 +90,21 @@ const styles = StyleSheet.create({
   },
   cover: {
     position: "relative",
-    border: "2px solid black",
+    borderWidth: 2,
+    borderColor: "black",
     margin: "15px",
-    padding: "10px",
-    color: " black",
+    padding: 10,
+    color: "black",
     backgroundColor: "lightgray",
     width: "350px",
-    boxShadow: " 0 0 5px black, 0 0 20px black, 0 0 30px black",
+    shadowRadius: 5,
+    shadowColor: "#3486eb",
   },
   h3: {
-    padding: "3px",
+    padding: 3,
   },
   headname: {
-    fontSize: "20px",
-    textDecoration: "none",
+    fontSize: 20,
     color: "#b8860b",
   },
 });

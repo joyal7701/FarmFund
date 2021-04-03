@@ -11,7 +11,9 @@ const page3 = ({ navigation }) => {
     <View>
       <View style={styles.back}></View>
       <View style={styles.conatiner}>
-        <View style={styles.header}>--Select Crop--</View>
+        <View>
+          <Text style={styles.header}>Select Crop</Text>
+        </View>
         <View style={styles.cover}>
           <TouchableOpacity
             onPress={() => navigation.navigate("Wheat")}
@@ -134,9 +136,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     height: "150%",
     width: "100%",
-    backgroundRepeat: "no-repeat",
     opacity: 0.9,
-    backgroundPositionX: "center",
     backgroundColor: "#D0D0D0",
     alignItems: "center",
   },
@@ -151,46 +151,48 @@ const styles = StyleSheet.create({
   },
   cover: {
     position: "relative",
-    border: " 2px solid darkgreen",
+    borderWidth: 2,
+    borderColor: "darkgreen",
     margin: "20px",
-    padding: "10px",
+    padding: 10,
     paddingLeft: "-1px",
     paddingRight: "1px",
     color: "white",
-    boxShadow: "0 0 5px orange, 0 0 20px green, 0 0 30px brown",
-    letterSpacing: "2px",
+    shadowRadius: 5,
+    shadowColor: "#3486eb",
+    letterSpacing: 2,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
   },
   cover1: {
     position: "relative",
-    border: " 2px solid darkgreen",
+    borderWidth: 2,
+    borderColor: "darkgreen",
     margin: "20px",
-    padding: "10px",
+    padding: 10,
     paddingLeft: "-1px",
     paddingRight: "1px",
     color: "white",
-    boxShadow: "0 0 5px orange, 0 0 20px green, 0 0 30px brown",
-    letterSpacing: "2px",
+    shadowRadius: 5,
+    shadowColor: "#3486eb",
+    letterSpacing: 2,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: "-130px",
   },
   title: {
-    fontSize: "26px",
+    fontSize: 26,
     color: "#b8860b",
-    fontWeight: "200px",
-    letterSpacing: "1px",
-    textAlign: " center",
-    padding: "5px",
+    letterSpacing: 1,
+    textAlign: "center",
+    padding: 5,
   },
   header: {
-    fontSize: "50px",
-    letterSpacing: "2px",
-    fontWeight: 600,
-    marginTop: "7px",
+    fontSize: 50,
+    letterSpacing: 2,
+    marginTop: 7,
     textAlign: "center",
     color: "green",
   },
