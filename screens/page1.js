@@ -1,9 +1,15 @@
 import React from "react";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+} from "react-native";
 
 const page1 = ({ navigation }) => {
   return (
-    <View>
+    <ScrollView>
       <View style={styles.back}></View>
       <View style={styles.conatiner}>
         <View style={styles.header}></View>
@@ -12,17 +18,16 @@ const page1 = ({ navigation }) => {
             PMKSY Per Drop More Crop
           </Text>
           <Text style={styles.details}>
-            Pradhan Mantri Krishi Sinchai Yojana PER DROP MORE CROP <br />
-            Micro irrigation is an integral component of the scheme to maximise
-            water use efficiency at farm level. It is also called as 'TAPAK
-            SINCHAI' .
+            Pradhan Mantri Krishi Sinchai Yojana PER DROP MORE CROP Micro
+            irrigation is an integral component of the scheme to maximise water
+            use efficiency at farm level. It is also called as 'TAPAK SINCHAI' .
           </Text>
           <TouchableOpacity
             activeOpacity={0.5}
             style={styles.apply}
             onPress={() => navigation.navigate("Subsidy Registered")}
           >
-            Apply
+            <Text>Apply</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.cover}>
@@ -41,7 +46,7 @@ const page1 = ({ navigation }) => {
             style={styles.apply}
             onPress={() => navigation.navigate("Subsidy Registered")}
           >
-            Apply
+            <Text>Apply</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.cover}>
@@ -59,7 +64,7 @@ const page1 = ({ navigation }) => {
             style={styles.apply}
             onPress={() => navigation.navigate("Subsidy Registered")}
           >
-            Apply
+            <Text>Apply</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.cover1}>
@@ -79,11 +84,11 @@ const page1 = ({ navigation }) => {
             style={styles.apply}
             onPress={() => navigation.navigate("Subsidy Registered")}
           >
-            Apply
+            <Text>Apply</Text>
           </TouchableOpacity>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -109,7 +114,7 @@ const styles = StyleSheet.create({
     position: "relative",
     borderWidth: 2,
     borderColor: "white",
-    margin: "5px",
+    margin: 5,
     padding: 5,
     display: "flex",
     flexDirection: "column",
@@ -120,13 +125,12 @@ const styles = StyleSheet.create({
     position: "relative",
     borderWidth: 2,
     borderColor: "white",
-    margin: "5px",
+    margin: 5,
     padding: 5,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     backgroundColor: "gray",
-    marginBottom: "-225px",
   },
   title: {
     fontSize: 26,
@@ -144,12 +148,12 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
     padding: 5,
     textAlign: "center",
-    margin: "5px",
+    margin: 5,
   },
   header: {
     fontSize: 50,
     letterSpacing: 2,
-    margin: "2.5px",
+    margin: 2.5,
   },
   apply: {
     fontSize: 17,

@@ -25,7 +25,6 @@ const HomeScreen = ({ navigation }) => {
             style={{
               fontSize: 22,
               color: "white",
-              fontWeight: 500,
               marginRight: 20,
             }}
           >
@@ -60,7 +59,7 @@ const HomeScreen = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={{ justifyContent: "center", marginRight: 50 }}
+            style={{ justifyContent: "center" }}
             activeOpacity={0.5}
             onPress={() => navigation.navigate("All Subsidies")}
           >
@@ -68,7 +67,7 @@ const HomeScreen = ({ navigation }) => {
               name="list-ul"
               size={24}
               color="black"
-              style={{ justifyContent: "center", marginLeft: 100 }}
+              style={{ justifyContent: "center" }}
             />
           </TouchableOpacity>
         </View>
@@ -82,7 +81,7 @@ const HomeScreen = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={{ justifyContent: "center", marginRight: 50 }}
+            style={{ justifyContent: "center" }}
             activeOpacity={0.5}
             onPress={() => navigation.navigate("Agro Shops")}
           >
@@ -90,7 +89,7 @@ const HomeScreen = ({ navigation }) => {
               name="shop"
               size={24}
               color="black"
-              style={{ justifyContent: "center", marginLeft: 110 }}
+              style={{ justifyContent: "center" }}
             />
           </TouchableOpacity>
         </View>
@@ -104,7 +103,7 @@ const HomeScreen = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={{ justifyContent: "center", marginRight: 50 }}
+            style={{ justifyContent: "center" }}
             activeOpacity={0.5}
             onPress={() => navigation.navigate("Market Yard")}
           >
@@ -112,7 +111,7 @@ const HomeScreen = ({ navigation }) => {
               name="location"
               size={24}
               color="black"
-              style={{ justifyContent: "center", marginLeft: 107 }}
+              style={{ justifyContent: "center" }}
             />
           </TouchableOpacity>
         </View>
@@ -126,7 +125,7 @@ const HomeScreen = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={{ justifyContent: "center", marginRight: 50 }}
+            style={{ justifyContent: "center" }}
             activeOpacity={0.5}
             onPress={() => navigation.navigate("Messaging Groups")}
           >
@@ -134,7 +133,7 @@ const HomeScreen = ({ navigation }) => {
               name="message"
               size={24}
               color="black"
-              style={{ justifyContent: "center", marginLeft: 25 }}
+              style={{ justifyContent: "center" }}
             />
           </TouchableOpacity>
         </View>
@@ -145,7 +144,7 @@ const HomeScreen = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            style={{ justifyContent: "center", marginRight: 50 }}
+            style={{ justifyContent: "center" }}
             activeOpacity={0.5}
             onPress={signOutUser}
           >
@@ -153,7 +152,7 @@ const HomeScreen = ({ navigation }) => {
               name="logout"
               size={24}
               color="black"
-              style={{ justifyContent: "center", marginLeft: 150 }}
+              style={{ justifyContent: "center" }}
             />
           </TouchableOpacity>
         </View>
@@ -184,12 +183,12 @@ const styles = StyleSheet.create({
   },
   cover: {
     position: "relative",
-    margin: "20px",
-    padding: "10px",
-    paddingLeft: "-1px",
+    margin: 20,
+    padding: 10,
+    paddingLeft: -1,
     borderWidth: 2,
     borderColor: "darkgreen",
-    paddingRight: "1px",
+    paddingRight: 1,
     color: "white",
     letterSpacing: 2,
     display: "flex",
@@ -200,15 +199,15 @@ const styles = StyleSheet.create({
   },
   cover1: {
     position: "relative",
-    margin: "20px",
-    padding: "10px",
-    paddingLeft: "1px",
+    margin: 20,
+    padding: 10,
+    paddingLeft: 1,
     borderColor: "brown",
     borderWidth: 2,
-    paddingRight: "1px",
+    paddingRight: 1,
     color: "white",
     letterSpacing: 2,
-    marginBottom: "-130px",
+    marginBottom: 130,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",

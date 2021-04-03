@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+      .header {
+        font-size: 50px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        margin: 10px;
+      }
+      .cover {
+        position: relative;
+        border: 2px solid black;
+        margin: 20px;
+
+        padding: 10px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.315);
+        width: 350px;
+        box-shadow: 0 0 5px black, 0 0 20px black, 0 0 30px black;
+      }
+      h3 {
+        padding: 3px;
+      }
+      .back {
+        position: absolute;
+        height: 150%;
+        width: 100%;
+        background-image: url(./welc.jpeg);
+        background-position: center;
+        background-size: cover;
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back"></div>
+    <div class="container">
+      <div class="header">Agro Shops</div>
+      <div class="cover">
+        <h3 class="shopkeepername">ShopKeeper : Dirgh Patel</h3>
+        <h3 class="shopname">Shop Name:</h3>
+        <h3 class="mobilenumber">Contact :</h3>
+      </div>
+      <div class="cover">
+        <h3 class="headname">ShopKeeper : Karan Koradiya</h3>
+        <h3 class="shopname">Shop Name:</h3>
+        <h3 class="mobilenumber">Contact :</h3>
+      </div>
+      <div class="cover">
+        <h3 class="headname">ShopKeeper : Jaivik Patel</h3>
+        <h3 class="shopname">Shop Name:</h3>
+        <h3 class="mobilenumber">Contact :</h3>
+      </div>
+      <div class="cover">
+        <h3 class="headname">ShopKeeper : Joyal Shah</h3>
+        <h3 class="shopname">Shop Name:</h3>
+        <h3 class="mobilenumber">Contact :</h3>
+      </div>
+      <div class="cover">
+        <h3 class="headname">ShopKeeper : Meet Kantesariya</h3>
+        <h3 class="shopname">Shop Name:</h3>
+        <h3 class="mobilenumber">Contact :</h3>
+      </div>
+      <div class="cover">
+        <h3 class="headname">ShopKeeper : Pinkesh Patel</h3>
+        <h3 class="shopname">Shop Name:</h3>
+        <h3 class="mobilenumber">Contact :</h3>
+      </div>
+    </div>
+  </body>
+</html>

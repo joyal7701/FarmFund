@@ -1,5 +1,11 @@
 import React, { useLayoutEffect } from "react";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+} from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const Corn = ({ navigation }) => {
@@ -29,46 +35,59 @@ const Corn = ({ navigation }) => {
   }, [navigation]);
 
   return (
-    <View>
+    <ScrollView>
       <View style={styles.back}></View>
-      <View style={styles.container}>
+      <View style={styles.conatiner}>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3 style={styles.title}>
             Crop-Name : Corn
           </Text>
-          <Text h3> City : Ahmedabad </Text>
-          <Text h3> Price-Range : 350-365 </Text>
+          <Text style={styles.details}>
+            City : Ahmedabad {"\n"} Price-Range : 275-285
+          </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3 style={styles.title}>
             Crop-Name : Corn
           </Text>
-          <Text h3> City : Gandhinagar </Text>
-          <Text h3> Price-Range : 375-395 </Text>
+          <Text style={styles.details}>
+            City : Gandhinagar{"\n"} Price-Range : 270-290
+          </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3 style={styles.title}>
             Crop-Name : Corn
           </Text>
-          <Text h3> City : Rajkot </Text>
-          <Text h3> Price-Range : 295-305 </Text>
+          <Text style={styles.details}>
+            City : Rajkot{"\n"} Price-Range : 295-315
+          </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+          <Text h3 style={styles.title}>
             Crop-Name : Corn
           </Text>
-          <Text h3> City : Surat </Text>
-          <Text h3> Price-Range : 315-345 </Text>
+          <Text style={styles.details}>
+            City : Surat{"\n"}Price-Range : 290-325
+          </Text>
         </View>
-        <View style={styles.cover}>
-          <Text h3 style={styles.headname}>
+        <View style={styles.cover1}>
+          <Text h3 style={styles.title}>
             Crop-Name : Corn
           </Text>
-          <Text h3> City : Mehsana </Text>
-          <Text h3> Price-Range : 290-300 </Text>
+          <Text style={styles.details}>
+            City : Mehsana {"\n"}Price-Range : 280-310
+          </Text>
+        </View>
+        <View style={styles.cover1}>
+          <Text h3 style={styles.title}>
+            Crop-Name : Corn
+          </Text>
+          <Text style={styles.details}>
+            City : Bhavanagar{"\n"}Price-Range : 295-315
+          </Text>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -79,7 +98,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     height: "150%",
     width: "100%",
-    opacity: 0.6,
+    opacity: 0.9,
+    backgroundColor: "#D0D0D0",
   },
   container: {
     position: "absolute",
@@ -92,20 +112,38 @@ const styles = StyleSheet.create({
   cover: {
     position: "relative",
     borderWidth: 2,
-    borderColor: "black",
-    margin: "15px",
-    padding: 10,
-    color: "black",
-    backgroundColor: "lightgray",
-    width: "350px",
-    shadowRadius: 5,
-    shadowColor: "#3486eb",
+    borderColor: "white",
+    margin: 5,
+    padding: 5,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "gray",
   },
-  h3: {
-    padding: 3,
+  cover1: {
+    position: "relative",
+    borderWidth: 2,
+    borderColor: "white",
+    margin: 5,
+    padding: 5,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "gray",
   },
-  headname: {
+  title: {
+    fontSize: 22,
+    color: "lightgreen",
+    letterSpacing: 1,
+    textAlign: "center",
+    padding: 5,
+  },
+  details: {
     fontSize: 20,
-    color: "#b8860b",
+    color: "white",
+    letterSpacing: 1,
+    padding: 5,
+    textAlign: "center",
+    margin: 5,
   },
 });

@@ -102,7 +102,7 @@ const page3 = ({ navigation }) => {
             />
           </TouchableOpacity>
         </View>
-        <View style={styles.cover1}>
+        <View style={styles.cover}>
           <TouchableOpacity
             onPress={() => navigation.navigate("Bajra")}
             activeOpacity={0.5}
@@ -153,10 +153,10 @@ const styles = StyleSheet.create({
     position: "relative",
     borderWidth: 2,
     borderColor: "darkgreen",
-    margin: "20px",
+    margin: 20,
     padding: 10,
-    paddingLeft: "-1px",
-    paddingRight: "1px",
+    paddingLeft: -1,
+    paddingRight: 1,
     color: "white",
     shadowRadius: 5,
     shadowColor: "#3486eb",
@@ -164,23 +164,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-  },
-  cover1: {
-    position: "relative",
-    borderWidth: 2,
-    borderColor: "darkgreen",
-    margin: "20px",
-    padding: 10,
-    paddingLeft: "-1px",
-    paddingRight: "1px",
-    color: "white",
-    shadowRadius: 5,
-    shadowColor: "#3486eb",
-    letterSpacing: 2,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginBottom: "-130px",
   },
   title: {
     fontSize: 26,

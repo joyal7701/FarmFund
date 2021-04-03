@@ -1,84 +1,58 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, ScrollView } from "react-native";
 
 const page2 = () => {
   return (
-    <View>
+    <ScrollView>
       <View style={styles.back}></View>
-      <View style={styles.container}>
-        <View style={styles.header}></View>
+      <View style={styles.conatiner}>
         <View style={styles.cover}>
-          <Text h3>
-            <Text>ShopKeeper : Mohandas Desai</Text>
+          <Text h3 style={styles.title}>
+            ShopKeeper : Mohandas Desai
           </Text>
-          <Text h3>
-            <Text>Shop Name : Cultured Crops</Text>
-          </Text>
-          <Text h3>
-            <Text>Contact : 9909937921</Text>
-          </Text>
-          <Text h3>
-            <Text>Location : Vasana, Ahmedabad</Text>
+          <Text style={styles.details}>
+            Shop Name : Cultured Crops{"\n"} Contact : 9909937921{"\n"} Location
+            : Vasana, Ahmedabad
           </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3>
-            <Text>ShopKeeper : Keshavlal Pandya</Text>
+          <Text h3 style={styles.title}>
+            ShopKeeper : Keshavlal Pandya
           </Text>
-          <Text h3>
-            <Text>Shop Name : Whitecreek Farms</Text>
-          </Text>
-          <Text h3>
-            <Text>Contact : 982839571</Text>
-          </Text>
-          <Text h3>
-            <Text>Location : Sector 13, Gandhinagr</Text>
+          <Text style={styles.details}>
+            Shop Name : Whitecreek Farms{"\n"} Contact : 982839571{"\n"}{" "}
+            Location : Sector 13, Gandhinagr
           </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3>
-            <Text>ShopKeeper : Ramakant Patel</Text>
+          <Text h3 style={styles.title}>
+            ShopKeeper : Ramakant Patel
           </Text>
-          <Text h3>
-            <Text>Shop Name : Succulent Seeds</Text>
-          </Text>
-          <Text h3>
-            <Text>Contact : 9123759011</Text>
-          </Text>
-          <Text h3>
-            <Text>Location : Kadi, Mehsana</Text>
+          <Text style={styles.details}>
+            Shop Name : Succulent Seeds{"\n"} Contact : 9123759011{"\n"}{" "}
+            Location : Kadi, Mehsana
           </Text>
         </View>
         <View style={styles.cover}>
-          <Text h3>
-            <Text>ShopKeeper : Suryabhai Shukla</Text>
+          <Text h3 style={styles.title}>
+            ShopKeeper : Bharatbhai Patel
           </Text>
-          <Text h3>
-            <Text>Shop Name : Healthy Harvest</Text>
-          </Text>
-          <Text h3>
-            <Text>Contact : 9489654789</Text>
-          </Text>
-          <Text h3>
-            <Text>Location : Morbi, Rajkot</Text>
+          <Text style={styles.details}>
+            Shop Name : Richer Lands{"\n"} Contact : 945863014{"\n"}Location :
+            Songadh, Surat
           </Text>
         </View>
-        <View style={styles.cover}>
-          <Text h3>
-            <Text>ShopKeeper : Bharatbhai Patel</Text>
+        <View style={styles.cover1}>
+          <Text h3 style={styles.title}>
+            Suryabhai Shukla
           </Text>
-          <Text h3>
-            <Text>Shop Name : Richer Lands</Text>
-          </Text>
-          <Text h3>
-            <Text>Contact : 945863014</Text>
-          </Text>
-          <Text h3>
-            <Text>Location : Songadh, Surat</Text>
+          <Text style={styles.details}>
+            Healthy Harvest{"\n"}Contact : 9489654789{"\n"}Location : Morbi,
+            Rajkot
           </Text>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -89,7 +63,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     height: "150%",
     width: "100%",
-    opacity: 0.6,
+    opacity: 0.9,
+    backgroundColor: "#D0D0D0",
   },
   container: {
     position: "absolute",
@@ -99,24 +74,41 @@ const styles = StyleSheet.create({
     height: "100%",
     width: "100%",
   },
-  header: {
-    fontSize: 50,
-    letterSpacing: 2,
-    margin: "10px",
-  },
   cover: {
     position: "relative",
-    borderColor: "black",
     borderWidth: 2,
-    margin: "15px",
-    padding: 10,
-    color: "black",
-    backgroundColor: "#dcd0ff",
-    width: "350px",
-    shadowRadius: 5,
-    shadowColor: "#00bfff",
+    borderColor: "white",
+    margin: 5,
+    padding: 5,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "gray",
   },
-  h3: {
-    padding: 3,
+  cover1: {
+    position: "relative",
+    borderWidth: 2,
+    borderColor: "white",
+    margin: 5,
+    padding: 5,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "gray",
+  },
+  title: {
+    fontSize: 22,
+    color: "lightgreen",
+    letterSpacing: 1,
+    textAlign: "center",
+    padding: 5,
+  },
+  details: {
+    fontSize: 20,
+    color: "white",
+    letterSpacing: 1,
+    padding: 5,
+    textAlign: "center",
+    margin: 5,
   },
 });
