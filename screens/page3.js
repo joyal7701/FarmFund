@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     height: "150%",
     width: "100%",
     opacity: 0.9,
-    backgroundColor: "#D0D0D0",
+    backgroundColor: "#F4E1D4",
     alignItems: "center",
   },
   container: {
@@ -150,6 +150,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   cover: {
+    marginTop: 40,
     position: "relative",
     borderWidth: 2,
     borderColor: "darkgreen",
@@ -160,6 +161,7 @@ const styles = StyleSheet.create({
     color: "white",
     shadowRadius: 5,
     shadowColor: "#3486eb",
+    backgroundColor: "#FFFFCC",
     letterSpacing: 2,
     display: "flex",
     flexDirection: "row",

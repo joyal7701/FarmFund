@@ -20,7 +20,7 @@ const Apply = () => {
         }}
       >
         Your response has been recorded. You will be informed via mail soon.
-        <Text style={{ color: "blue" }}>THANK YOU.</Text>
+        <Text style={{ color: "blue" }}>{"\n"}THANK YOU.</Text>
       </Text>
     </View>
   );

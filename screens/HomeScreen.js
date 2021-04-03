@@ -49,7 +49,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.back}></View>
       <View style={styles.conatiner}>
         <View style={styles.header}></View>
-        <View style={styles.cover}>
+        <View style={styles.cover2}>
           <TouchableOpacity
             onPress={() => navigation.navigate("All Subsidies")}
             activeOpacity={0.5}
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     height: "150%",
     width: "100%",
     opacity: 0.9,
-    backgroundColor: "#D0D0D0",
+    backgroundColor: "#D4C8B9",
     alignItems: "center",
   },
   container: {
@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
     margin: 20,
     padding: 10,
     paddingLeft: -1,
-    borderWidth: 2,
+    borderWidth: 3,
     borderColor: "darkgreen",
     paddingRight: 1,
     color: "white",
@@ -196,6 +196,25 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     shadowRadius: 5,
     shadowColor: "#3486eb",
+    backgroundColor: "#FAEDEB",
+  },
+  cover2: {
+    position: "relative",
+    margin: 20,
+    marginTop: 120,
+    padding: 10,
+    paddingLeft: -1,
+    borderWidth: 3,
+    borderColor: "darkgreen",
+    paddingRight: 1,
+    color: "white",
+    letterSpacing: 2,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    shadowRadius: 5,
+    shadowColor: "#3486eb",
+    backgroundColor: "#FAEDEB",
   },
   cover1: {
     position: "relative",
@@ -203,12 +222,13 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingLeft: 1,
     borderColor: "brown",
-    borderWidth: 2,
+    borderWidth: 3,
     paddingRight: 1,
     color: "white",
     letterSpacing: 2,
     marginBottom: 130,
     display: "flex",
+    backgroundColor: "#FAEDEB",
     flexDirection: "row",
     justifyContent: "space-between",
     shadowRadius: 5,
