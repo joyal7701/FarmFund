@@ -78,8 +78,6 @@ const styles = StyleSheet.create({
     position: "absolute",
     height: "150%",
     width: "100%",
-    backgroundPosition: "center",
-    backgroundSize: "cover",
     opacity: 0.6,
   },
   container: {
