@@ -21,7 +21,7 @@ export class Apply extends Component {
             textAlign: "center",
           }}
         >
-          Your response has been recorded. You will be informed via mail.
+          Your response has been recorded. You will be informed via mail soon.
           <br />
           <br />
           <Text style={{ color: "blue" }}>THANK YOU.</Text>
